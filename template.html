@@ -172,8 +172,30 @@
                 <!--begin::Header-->
                 <div id="kt_header" class="header  header-fixed ">
                     <!--begin::Container-->
-                    <div class=" container-fluid  d-flex align-items-stretch justify-content-between">
-                        
+                    <div class=" container-fluid d-flex align-items-stretch justify-content-between">
+                        <!--begin::Header Menu Wrapper-->
+                        <div class="header-menu-wrapper header-menu-wrapper-left" id="kt_header_menu_wrapper">
+                            <!--begin::Header Menu-->
+                            <div id="kt_header_menu" class="header-menu header-menu-mobile  header-menu-layout-default"></div>
+                            <!--end::Header Menu-->
+                        </div>
+                        <!--end::Header Menu Wrapper-->
+
+                        <!--begin::Topbar-->
+                        <div class="topbar">
+                            <!--begin::User-->
+                            <div class="topbar-item">
+                                <div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
+                                    <span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hai,</span>
+                                    <span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">admin</span>
+                                    <span class="symbol symbol-lg-35 symbol-25 symbol-light-success">
+                                        <span class="symbol-label font-size-h5 font-weight-bold">a</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--end::User-->
+                        </div>
+                        <!--end::Topbar-->
                     </div>
                     <!--end::Container-->
                 </div>
@@ -184,7 +206,20 @@
                     <!--begin::Subheader-->
                     <div class="subheader py-2 py-lg-4  subheader-solid " id="kt_subheader">
                         <div class=" container-fluid  d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+                            <div class="d-flex align-items-center flex-wrap mr-1">
+                                <!--begin::Page Heading-->
+                                <div class="d-flex align-items-baseline flex-wrap mr-5">
+                                    <!--begin::Page Title-->
+                                    <h5 class="text-dark font-weight-bold my-1 mr-5">Beranda</h5>
+                                    <!--end::Page Title-->
 
+                                    <!--begin::Breadcrumb-->
+                                    <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
+                                    </ul>
+                                    <!--end::Breadcrumb-->
+                                </div>
+                                <!--end::Page Heading-->
+                            </div>
                         </div>
                     </div>
                     <!--end::Subheader-->
@@ -297,7 +332,7 @@
                                                 <h1>Visitor traffic</h1>
                                             </div>
                                         </div>
-                                        <div class="card-body">
+                                        <div class="card-body mx-auto">
                                             <div class="table-responsive">
                                                 <table class="table table-head-custom table-head-bg table-borderless table-vertical-center" style="display: block;">
                                                     <thead class="datatable-head">
