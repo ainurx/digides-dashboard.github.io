@@ -41,6 +41,21 @@
     crossorigin=""></script>
     <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
 
+    <style>
+        .data-terisi{
+            font-size: 64px;
+        }
+        @media screen and (max-width: 580px){
+            .title-pengaturan{
+                overflow: scroll;
+            }
+
+            .data-terisi{
+                font-size: 48px;
+            }
+        }
+    </style>
+
 </head>
 <!--end::Head-->
 
@@ -230,22 +245,22 @@
                         <div class=" container ">
                             <!--begin::Dashboard-->
                             <!--begin::Row-->
-                            <div class="row">
-                                <div class="col-lg-3 col-xxl-4 gutter-b">
+                            <div class="row row-cols-2">
+                                <div class="col-md-3 col-sm-6 col-xs-6 gutter-b">
                                     <!--begin::Mixed Widget 1-->
                                     <div class="card card-custom bg-primary">
                                       <div class="card-header border-0">
-                                        <div class="card-title">
+                                        <div class="card-title title-pengaturan">
                                             <div class="mr-4 flex-shrink-0 text-center" style="width: 40px;">
                                                 <i class="icon-2x text-white-50 flaticon-map"></i>
-                                              </div>
+                                            </div>
                                             <h3 class="card-label text-white">
                                                 Data Pengaturan Umum
                                             </h3>
                                         </div>        
                                     </div>
                                     <div class="card-body">
-                                        <h1 class="text-white text-center" style="font-size: 64px;">15%</h1>
+                                        <h1 class="text-white text-center data-terisi">15%</h1>
                                     </div>                            
                                     <div class="separator separator-solid separator-white opacity-20"></div>
                                       <div class="text-center text-white">
@@ -254,7 +269,7 @@
                                     </div>
                                     <!--end::Mixed Widget 1-->
                                 </div>
-                                <div class="col-lg-3 col-xxl-4 gutter-b">
+                                <div class="col-md-3 col-sm-6 col-xs-6 gutter-b">
                                     <!--begin::Mixed Widget 1-->
                                     <div class="card card-custom bg-primary">
                                       <div class="card-header border-0">
@@ -277,7 +292,7 @@
                                     </div>
                                     <!--end::Mixed Widget 1-->
                                 </div>
-                                <div class="col-lg-3 col-xxl-4 gutter-b">
+                                <div class="col-md-3 col-sm-6 col-xs-6 gutter-b">
                                     <!--begin::Mixed Widget 1-->
                                     <div class="card card-custom bg-primary">
                                         <div class="card-header border-0">
@@ -298,7 +313,7 @@
                                     </div>
                                     <!--end::Mixed Widget 1-->
                                 </div>
-                                <div class="col-lg-3 col-xxl-4 gutter-b">
+                                <div class="col-md-3 col-sm-6 col-xs-6 gutter-b">
                                     <!--begin::Mixed Widget 1-->
                                     <div class="card card-custom bg-primary">
                                         <div class="card-header border-0">
@@ -320,10 +335,11 @@
                                     <!--end::Mixed Widget 1-->
                                 </div>
 
+                            </div>
                                 <!-- MAP -->
                                 <div class="gutter-b" id="mapid" style="height: 300px; width: 100%;"></div>
                                 <!-- END MAP -->
-                                
+                            <div class="row">    
                                 <div class="col-lg-4 gutter-b">
                                     <div class="card card-custom ">
                                         <div class="card-header flex-wrap border-0 pt-6 pb-0">
