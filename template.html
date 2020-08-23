@@ -45,9 +45,19 @@
         .data-terisi{
             font-size: 64px;
         }
+
+        .card-rekap{
+            height: 263.5px;
+        }
+
         @media screen and (max-width: 580px){
             .title-pengaturan{
-                overflow: scroll;
+                /* overflow: scroll; */
+                display: inline-block;
+            }
+
+            .card-rekap{
+            height: 244px;
             }
 
             .data-terisi{
@@ -250,13 +260,13 @@
                                     <!--begin::Mixed Widget 1-->
                                     <div class="card card-custom bg-primary">
                                       <div class="card-header border-0">
-                                        <div class="card-title title-pengaturan">
-                                            <div class="mr-4 flex-shrink-0 text-center" style="width: 40px;">
+                                        <div class="card-title title-pengaturan mx-auto">
+                                            <div class="mr-4 flex-shrink-0 mx-auto text-center">
                                                 <i class="icon-2x text-white-50 flaticon-map"></i>
+                                                <h3 class="card-label text-white mx-auto">
+                                                    Data <br> Pengaturan <br> Umum
+                                                </h3>
                                             </div>
-                                            <h3 class="card-label text-white">
-                                                Data Pengaturan Umum
-                                            </h3>
                                         </div>        
                                     </div>
                                     <div class="card-body">
@@ -271,15 +281,15 @@
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6 gutter-b">
                                     <!--begin::Mixed Widget 1-->
-                                    <div class="card card-custom bg-primary">
+                                    <div class="card card-custom bg-primary card-rekap">
                                       <div class="card-header border-0">
-                                        <div class="card-title">
-                                            <div class="mr-4 flex-shrink-0 text-center" style="width: 40px;">
+                                        <div class="card-title text-center mx-auto">
+                                            <div class="mr-4 flex-shrink-0">
                                                 <i class="icon-2x text-white-50 flaticon2-file"></i>
+                                                <h3 class="card-label mx-auto text-white">
+                                                    Berita
+                                                </h3>
                                             </div>
-                                            <h3 class="card-label text-white">
-                                                Berita
-                                            </h3>
                                         </div>        
                                     </div>
                                     <div class="card-body">
@@ -294,13 +304,13 @@
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6 gutter-b">
                                     <!--begin::Mixed Widget 1-->
-                                    <div class="card card-custom bg-primary">
-                                        <div class="card-header border-0">
+                                    <div class="card card-custom bg-primary card-rekap">
+                                        <div class="card-header border-0 mx-auto">
                                             <div class="card-title">
-                                                <div class="mr-4 flex-shrink-0 text-center" style="width: 40px;">
+                                                <div class="mr-4 flex-shrink-0 text-center">
                                                     <i class="icon-2x text-white-50 flaticon2-box-1"></i>
+                                                    <h3 class="card-label mx-auto text-white">Belanja</h3>
                                                 </div>
-                                                <h3 class="card-label text-white">Belanja</h3>
                                             </div>        
                                         </div>
                                     <div class="card-body">
@@ -315,13 +325,13 @@
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6 gutter-b">
                                     <!--begin::Mixed Widget 1-->
-                                    <div class="card card-custom bg-primary">
-                                        <div class="card-header border-0">
+                                    <div class="card card-custom bg-primary card-rekap">
+                                        <div class="card-header mx-auto border-0">
                                             <div class="card-title">
-                                                <div class="mr-4 flex-shrink-0 text-center" style="width: 40px;">
+                                                <div class="mr-4 flex-shrink-0 text-center">
                                                     <i class="icon-2x text-white-50 flaticon2-position"></i>
+                                                    <h3 class="card-label mx-auto text-white">Wisata</h3>
                                                 </div>
-                                                <h3 class="card-label text-white">Wisata</h3>
                                             </div>        
                                         </div>
                                     <div class="card-body">
@@ -343,9 +353,9 @@
                                 <div class="col-lg-4 gutter-b">
                                     <div class="card card-custom ">
                                         <div class="card-header flex-wrap border-0 pt-6 pb-0">
-                                            <div class="mr-4 d-flex flex-shrink-0 text-center">
+                                            <div class="mr-4 d-flex flex-shrink-0 text-center mx-auto">
                                                 <i class="icon-2x text-dark-50 flaticon-eye icon-sm mr-3"></i>
-                                                <h1>Visitor traffic</h1>
+                                                <h1 class="mt-2">Visitor traffic</h1>
                                             </div>
                                         </div>
                                         <div class="card-body mx-auto">
@@ -394,9 +404,9 @@
                                 <div class="col-lg-4 gutter-b">
                                     <div class="card card-custom" style="padding-bottom: 40px;">
                                         <div class="card-header flex-wrap border-0 pt-6 pb-0">
-                                            <div class="mr-4 d-flex flex-shrink-0 text-center">
+                                            <div class="mr-4 d-flex flex-shrink-0 text-center mx-auto">
                                                 <i class="icon-2x text-dark-50 flaticon-like icon-sm mr-3"></i>
-                                                <h1>Halaman Favorit</h1>
+                                                <h1 class="mt-2">Halaman Favorit</h1>
                                             </div>
                                         </div>
                                         <div class="card-body mx-auto">
@@ -408,6 +418,8 @@
                                                             </th>
                                                             <th data-field="OrderID" class="datatable-cell datatable-cell-sort"><span style="width: 110px;">Jumlah Klik</span>
                                                             </th>
+                                                            <th data-field="OrderID" class="datatable-cell datatable-cell-sort"><span style="width: 110px;">Ke Halaman</span>
+                                                            </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody class="datatable-body" style="">
@@ -416,18 +428,39 @@
                                                                 style="width: 110px; margin-left: 8px;">Visitor hari ini</span></td>
                                                                 <td data-field="Country" aria-label="China" class="datatable-cell float-right"><span style="width: 110px;">
                                                                     21</span></td>
-                                                                </tr>
-                                                                <tr data-row="0" class="datatable-row" style="left: 0px;">
-                                                                    <td data-field="OrderID" aria-label="0374-5070" class="datatable-cell"><span
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <div class="mr-4 flex-shrink-0 text-center float-right">
+                                                                            <i class="icon-1x text-dark-50 flaticon-reply"></i>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-row="0" class="datatable-row" style="left: 0px;">
+                                                                <td data-field="OrderID" aria-label="0374-5070" class="datatable-cell"><span
                                                                         style="width: 110px; margin-left: 8px;">Visitor bulan ini</span></td>
-                                                            <td data-field="Country" aria-label="China" class="datatable-cell float-right"><span style="width: 110px;">
+                                                                <td data-field="Country" aria-label="China" class="datatable-cell float-right"><span style="width: 110px;">
                                                                 345</span></td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <div class="mr-4 flex-shrink-0 text-center float-right">
+                                                                            <i class="icon-1x text-dark-50 flaticon-reply"></i>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
                                                             </tr>
                                                             <tr data-row="0" class="datatable-row" style="left: 0px;">
                                                                 <td data-field="OrderID" aria-label="0374-5070" class="datatable-cell"><span
                                                                     style="width: 110px; margin-left: 8px;">Visitor bulan lalu</span></td>
                                                                     <td data-field="Country" aria-label="China" class="datatable-cell float-right"><span style="width: 110px;">
                                                                         35</span></td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <div class="mr-4 flex-shrink-0 text-center float-right">
+                                                                            <i class="icon-1x text-dark-50 flaticon-reply"></i>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
                                                             </tr>
                                                             <tr class="datatable-row"><td></td></tr>
                                                     </tbody>
@@ -439,9 +472,9 @@
                                 <div class="col-lg-4 gutter-b">
                                     <div class="card card-custom" style="padding-bottom: 40px;">
                                         <div class="card-header flex-wrap border-0 pt-6 pb-0">
-                                            <div class="mr-4 d-flex flex-shrink-0 text-center">
+                                            <div class="mr-4 d-flex flex-shrink-0 text-center mx-auto">
                                                 <i class="icon-2x text-dark-50 flaticon-star icon-sm mr-3"></i>
-                                                <h1>Produk Favorit</h1>
+                                                <h1 class="mt-2">Produk Favorit</h1>
                                             </div>
                                         </div>
                                         <div class="card-body mx-auto">
