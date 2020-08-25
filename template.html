@@ -30,6 +30,7 @@
     <link href="assets/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     <!--end::Layout Themes-->
 
     <!-- for maps -->
@@ -48,6 +49,10 @@
 
         .card-rekap{
             height: 263.5px;
+        }
+
+        .card-traffic{
+            height: 421px;
         }
 
         @media screen and (max-width: 580px){
@@ -351,7 +356,7 @@
                                 <!-- END MAP -->
                             <div class="row">    
                                 <div class="col-lg-4 gutter-b">
-                                    <div class="card card-custom ">
+                                    <div class="card card-custom card-traffic">
                                         <div class="card-header flex-wrap border-0 pt-6 pb-0">
                                             <div class="mr-4 d-flex flex-shrink-0 text-center mx-auto">
                                                 <i class="icon-2x text-dark-50 flaticon-eye icon-sm mr-3"></i>
@@ -486,6 +491,8 @@
                                                             </th>
                                                             <th data-field="OrderID" class="datatable-cell datatable-cell-sort"><span style="width: 110px;">Jumlah Klik</span>
                                                             </th>
+                                                            <th data-field="OrderID" class="datatable-cell datatable-cell-sort"><span style="width: 110px;">Ke Halaman</span>
+                                                            </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody class="datatable-body" style="">
@@ -494,18 +501,39 @@
                                                                 style="width: 110px; margin-left: 8px;">Visitor hari ini</span></td>
                                                                 <td data-field="Country" aria-label="China" class="datatable-cell float-right"><span style="width: 110px;">
                                                                     21</span></td>
+                                                                    <td>
+                                                                        <a href="#">
+                                                                            <div class="mr-4 flex-shrink-0 text-center float-right">
+                                                                                <i class="icon-1x text-dark-50 flaticon-reply"></i>
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr data-row="0" class="datatable-row" style="left: 0px;">
                                                                     <td data-field="OrderID" aria-label="0374-5070" class="datatable-cell"><span
                                                                         style="width: 110px; margin-left: 8px;">Visitor bulan ini</span></td>
                                                             <td data-field="Country" aria-label="China" class="datatable-cell float-right"><span style="width: 110px;">
                                                                 345</span></td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        <div class="mr-4 flex-shrink-0 text-center float-right">
+                                                                            <i class="icon-1x text-dark-50 flaticon-reply"></i>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
                                                             </tr>
                                                             <tr data-row="0" class="datatable-row" style="left: 0px;">
                                                                 <td data-field="OrderID" aria-label="0374-5070" class="datatable-cell"><span
                                                                     style="width: 110px; margin-left: 8px;">Visitor bulan lalu</span></td>
                                                                     <td data-field="Country" aria-label="China" class="datatable-cell float-right"><span style="width: 110px;">
                                                                         35</span></td>
+                                                                        <td>
+                                                                            <a href="#">
+                                                                                <div class="mr-4 flex-shrink-0 text-center float-right">
+                                                                                    <i class="icon-1x text-dark-50 flaticon-reply"></i>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
                                                             </tr>
                                                             <tr class="datatable-row"><td></td></tr>
                                                     </tbody>

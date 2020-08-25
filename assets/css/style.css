@@ -1,0 +1,26 @@
+.data-terisi {
+  font-size: 64px;
+}
+
+.card-rekap {
+  height: 263.5px;
+}
+
+.card-traffic {
+  height: 421px;
+}
+
+@media screen and (max-width: 580px) {
+  .title-pengaturan {
+    /* overflow: scroll; */
+    display: inline-block;
+  }
+
+  .card-rekap {
+    height: 244px;
+  }
+
+  .data-terisi {
+    font-size: 48px;
+  }
+}
